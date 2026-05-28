@@ -1,0 +1,370 @@
+/* =========================================
+   Reset & Variáveis Globais
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #6f2a59;
+    --primary-light: #8e3873;
+    --secondary-color: #98467e;
+    --text-color: #333333;
+    --text-light: #555555;
+    --bg-accent: #f1a5d5;
+    --bg-light: #fdf8fb; 
+    --white: #ffffff;
+    --font-playfair: "Playfair", serif;
+    --font-inter: "Inter", sans-serif;
+    --font-changa: "Changa One", sans-serif;
+    --section-padding: 100px 20px;
+    --border-radius: 24px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: var(--font-inter);
+    color: var(--text-color);
+    background-color: var(--white);
+    line-height: 1.7;
+}
+
+/* =========================================
+   Tipografia & Utilitários
+   ========================================= */
+h1, h2, h3 {
+    font-family: var(--font-changa);
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section { padding: var(--section-padding); }
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.section-desc {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 20px auto 0;
+}
+
+.divider {
+    height: 4px;
+    width: 80px;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.align-left { margin: 0; }
+.divider-light { background-color: var(--white); }
+.bg-light { background-color: var(--bg-light); }
+.bg-accent { background-color: var(--bg-accent); }
+.text-light { color: var(--white); }
+.text-center { text-align: center; }
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 16px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-whatsapp, .btn-whatsapp-large {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    box-shadow: 0 10px 25px rgba(46, 204, 113, 0.3);
+}
+
+.btn-whatsapp-large {
+    padding: 18px 50px;
+    font-size: 1.2rem;
+}
+
+.btn-whatsapp:hover, .btn-whatsapp-large:hover {
+    background-color: #27ae60;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(46, 204, 113, 0.4);
+}
+
+.btn-outline {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: var(--primary-light);
+    border-color: var(--primary-light);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   NOVA HERO SECTION (Estilo Dr. Gustavo)
+   ========================================= */
+.hero-section {
+    /* Ajuste o caminho da imagem conforme sua pasta */
+    background-image: url('../img/ex.webp');
+    background-size: cover;
+    background-position: center center; /* Mantém a imagem alinhada à direita */
+    background-repeat: no-repeat;
+    background-color: #f4f4f4; /* Cor de fundo caso a tela seja muito larga */
+    
+    /* Altura mínima para pegar bem a tela */
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 80px 20px;
+    filter: drop-shadow(0 10px 20px rgba(160, 28, 118, 0.293));
+}
+
+/* Opcional: Um gradiente sutil na esquerda para garantir que o texto dê leitura 
+   caso a imagem dela não tenha muito espaço vazio na esquerda */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0.9) 30%, rgba(255,255,255,0) 100%);
+    z-index: 1;
+}
+
+.hero-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide a tela no meio (50% / 50%) */
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Garante que o texto fique acima do gradiente */
+}
+
+/* Div 1: Conteúdo */
+.hero-content {
+    max-width: 550px;
+    padding-right: 30px;
+}
+
+.hero-title {
+    /* Fonte Inter ou Montserrat combinam mais com esse estilo clean */
+    font-family: var(--font-changa); 
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--secondary-color);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: var(--primary-color);
+    
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hero-description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.btn-green {
+    background-color: #5ed678; /* Verde do botão da referência */
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(94, 214, 120, 0.4);
+}
+
+.btn-green:hover {
+    background-color: #4cc767;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   Responsividade (Mobile)
+   ========================================= */
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr; /* No celular, vira 1 coluna só */
+    }
+    
+    .hero-section {
+        /* No celular, ajustamos a imagem para não cortar o rosto */
+        background-position: center top; 
+        background-size: cover;
+    }
+    
+    .hero-section::before {
+        /* Gradiente mais forte no celular para dar leitura no texto */
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.7) 100%);
+    }
+
+    .hero-content {
+        padding-right: 0;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 50px; /* Dá espaço se a cabeça dela ficar no topo */
+    }
+    
+    .hero-empty {
+        display: none; /* Some com a div vazia no celular */
+    }
+}
+
+/* =========================================
+   Sobre a Profissional
+   ========================================= */
+.about-grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.rounded-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: 0 20px 40px rgba(111, 42, 89, 0.1);
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-top: 20px;
+}
+
+/* =========================================
+   Serviços
+   ========================================= */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 50px 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(111, 42, 89, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--primary-color);
+    transition: height 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+}
+
+.service-card:hover::before { height: 10px; }
+.card-icon { font-size: 3rem; margin-bottom: 20px; }
+.service-card h3 { font-size: 2rem; margin-bottom: 15px; }
+.service-card p { color: var(--text-light); }
+
+/* =========================================
+   Galeria de Estrutura
+   ========================================= */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.gallery-item:hover .gallery-img { transform: scale(1.08); }
+
+/* =========================================
+   Footer / Contato
+   ========================================= */
+.footer-section {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 100px 20px 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 60px;
+}
+
+.footer-brand h2 { color: var(--white); font-size: 2.5rem; margin-bottom: 10px; }
+.footer-brand p { font-size: 1.1rem; opacity: 0.8; }
+.contact-info h3 { color: var(--white); margin-bottom: 20px; }
+.contact-info p { font-size: 1.1rem; margin-bottom: 15px; }
+.footer-bottom { text-align: center; margin-top: 30px; font-size: 0.9rem; opacity: 0.7; }
