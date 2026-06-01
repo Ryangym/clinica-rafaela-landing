@@ -3,122 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Linda Mulher | Fisioterapia e Estética</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <title>Dra. Rafaela Xavier | Fisioterapia e Estética</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 </head>
 <body>
 
-    <main>
-        <header class="hero-section" id="inicio">
-            <div class="container hero-container">
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/img/logo.png" alt="Logo Dra. Rafaela Xavier">
+            </a>
+            <button class="menu-btn" id="menu-btn">☰</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#espaco">O Espaço</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Fisioterapia e Estética Avançada com Cuidado Humanizado</h1>
+                <p>Atendimento personalizado e baseado em evidências para o seu bem-estar e autoestima.</p>
+                <a href="https://wa.me/5535997106168" class="btn-primary" target="_blank">Agendar minha avaliação</a>
+            </div>
+            <div class="hero-img">
+                <img src="assets/img/recepcao.jpeg" alt="Dra. Rafaela Xavier">
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container sobre-content">
+            <div class="sobre-text">
+                <h2>Prazer, sou Rafaela Xavier Silva.</h2>
+                <p>Fisioterapeuta graduada pela Universidade do Vale do Sapucaí (UNIVÁS), pós-graduada em Fisioterapia Dermatofuncional pela Faculdade IBECO e profissional da área da estética há mais de 9 anos.</p>
+                <p>Minha trajetória começou com a formação em Tecnologia em Estética pelo SENAC Minas, e desde então busco constante atualização.</p>
+                <p>Acredito que cada paciente é único e por isso, busco oferecer um atendimento personalizado, seguro e baseado em evidências, associando conhecimento técnico, tecnologia e cuidado humanizado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2 class="section-title">Meus Serviços</h2>
+            <div class="servicos-grid">
                 
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        Você sabia que grande parte das 
-                        <span class="highlight">dores corporais</span> 
-                        podem ser tratadas sem cirurgia?
-                    </h1>
-                    
-                    <p class="hero-subtitle">
-                        Com a Dra. Rafaela você terá um atendimento especializado e particular para a solução da sua dor e melhora da sua autoestima.
-                    </p>
-                    
-                    <p class="hero-description">
-                        Tratamentos avançados para reabilitação, alívio de dores crônicas e procedimentos estéticos exclusivos focados no seu bem-estar.
-                    </p>
-                    
-                    <a href="#contato" class="btn btn-green">
-                        <span class="icon">💬</span> Agendar Consulta
-                    </a>
+                <div class="card-servico">
+                    <img src="assets/img/atendimento1.jpeg" alt="Procedimento de Estética">
+                    <h3>Estética</h3>
+                    <ul>
+                        <li>Criolipólise</li>
+                        <li>Tratamentos personalizados para gordura localizada e flacidez</li>
+                        <li>Tratamentos para rejuvenescimento facial</li>
+                        <li>Limpeza de pele</li>
+                        <li>Drenagem</li>
+                        <li>Pós-operatório de cirurgia facial</li>
+                    </ul>
                 </div>
 
-                <div class="hero-empty"></div>
+                <div class="card-servico">
+                    <img src="assets/img/atendimento2.jpeg" alt="Procedimento de Fisioterapia">
+                    <h3>Fisioterapia</h3>
+                    <ul>
+                        <li>Fisioterapia pós câncer de mama</li>
+                        <li>Dor lombar</li>
+                        <li>Fraturas</li>
+                    </ul>
+                </div>
 
             </div>
-        </header>
+        </div>
+    </section>
 
-        <section class="section bg-light" id="sobre">
-            <div class="container about-grid">
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Atendimento Fisioterapia" class="rounded-img">
-                </div>
-                <div class="about-text">
-                    <h2>Conheça a Rafaela</h2>
-                    <div class="divider align-left"></div>
-                    <p>Sou fisioterapeuta apaixonada por transformar vidas através do movimento e do cuidado. Minha missão é entregar muito mais do que um procedimento, é proporcionar uma experiência de acolhimento.</p>
-                    <p>Com especialização em biomecânica e tratamentos estéticos avançados, meu foco é entender a raiz do seu problema e oferecer uma solução personalizada, para que você saia do estúdio com a confiança renovada.</p>
-                </div>
+    <section id="espaco" class="espaco">
+        <div class="container">
+            <h2 class="section-title">Conheça o Studio</h2>
+            <p class="text-center">Um ambiente preparado para o seu conforto e segurança.</p>
+            <div class="galeria-grid">
+                <img src="assets/img/clinica1.jpeg" alt="Maca de atendimento">
+                <img src="assets/img/clinica2.jpeg" alt="Mesa de atendimento">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section" id="servicos">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Áreas de Atendimento</h2>
-                    <div class="divider"></div>
-                    <p class="section-desc">Especialidades pensadas para cuidar de você por completo.</p>
-                </div>
-                <div class="cards-grid">
-                    <article class="service-card">
-                        <div class="card-icon">💆‍♀️</div>
-                        <h3>Fisioterapia</h3>
-                        <p>Reabilitação, alívio de dores crônicas e recuperação dos movimentos. Cuidamos da biomecânica do seu corpo para você viver sem limitações.</p>
-                    </article>
-                    
-                    <article class="service-card">
-                        <div class="card-icon">✨</div>
-                        <h3>Estética Avançada</h3>
-                        <p>Procedimentos estéticos de ponta, com ênfase especial em <strong>Criolipólise</strong>, para potencializar sua autoestima e trazer resultados duradouros.</p>
-                    </article>
-                </div>
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <h2 class="section-title">O que dizem as pacientes</h2>
+            <div class="depoimentos-scroll">
+                <img src="assets/img/feedback1.jpeg" alt="Feedback 1">
+                <img src="assets/img/feedback2.jpeg" alt="Feedback de Amanda Corsini">
+                <img src="assets/img/feedback3.jpeg" alt="Feedback de Maite">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section bg-accent" id="estrutura">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="text-light">Nossa Estrutura</h2>
-                    <div class="divider divider-light"></div>
-                    <p class="text-center text-light">Um ambiente climatizado, acolhedor e com equipamentos de alta tecnologia para receber você.</p>
-                </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Recepção" class="gallery-img">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sala de Fisioterapia" class="gallery-img">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Aparelhos de Estética" class="gallery-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer-section" id="contato">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <h2>Studio Linda Mulher</h2>
-                <p>Cuidando de você de dentro para fora.</p>
-            </div>
-            <div class="contact-info">
-                <h3>Agende seu Horário</h3>
-                <p>📍 <strong>Localização:</strong> [Endereço completo]</p>
-                <p>⏰ <strong>Horários:</strong> Seg a Sex, das 08h às 18h</p>
-                <br>
-                <a href="#" class="btn btn-whatsapp-large">Agendar pelo WhatsApp</a>
+    <footer id="contato">
+        <div class="footer-glow-bar"></div>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Studio Linda Mulher</h3>
+                <p>📍 Francisco Sales 443, Centro</p>
+                <p>Pouso Alegre - MG, CEP: 37.550.086</p>
+                <p>📱 (35) 99710-6168</p>
+                <a href="https://www.instagram.com/drarafaela_xavier?igsh=MTExdjlwM3dtd2t0Yw==" target="_blank" class="instagram-link">Siga no Instagram @drarafaela_xavier</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Studio Linda Mulher. Desenvolvido por Ryan Code.</p>
+            <p>&copy; 2026 Dra. Rafaela Xavier. Desenvolvido por Ryan Borges.</p>
         </div>
     </footer>
 
+    <a href="https://wa.me/5535997106168" class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 32 32" width="30" height="30" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M16 2a13 13 0 0 0-11 20l-2 5 5-2a13 13 0 1 0 8-23zm0 24a11 11 0 0 1-5-1l-3 1 1-3a11 11 0 1 1 7 3zm6-8c-.3-.1-1.7-.8-1.9-.9-.2-.1-.4-.1-.5.1-.2.2-.7.9-.9 1.1-.1.2-.3.2-.6.1s-1.2-.4-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.2-.2.3-.4.4-.6s.1-.4.2-.6c.1-.2.1-.5 0-.6-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.6c0 1.5 1.1 3 1.3 3.2.2.3 2.1 3.3 5.2 4.6 2.3.9 3.1 1 4.2.8 1.2-.2 2.6-1.1 3-2.1.3-1 .3-1.9.2-2.1-.1-.2-.3-.3-.6-.5z"/></svg>
+    </a>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
