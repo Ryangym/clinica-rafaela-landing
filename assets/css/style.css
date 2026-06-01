@@ -1,12 +1,12 @@
 /* Variáveis atualizadas com a paleta da clínica: Tons de Rosa Claro e Branco */
 :root {
-    --primary: #e5b3a7;         /* Rosa claro característico (elegante e suave) */
+    --primary: #dda496;         /* Rosa claro característico (elegante e suave) */
     --primary-light: #fff5f4;   /* Fundo rosa bem suave para alternar seções */
     --primary-accent: #f4dcd6;  /* Tom rosé intermediário para detalhes e bordas */
-    --primary-dark: #8a584e;    /* Rosa escuro/marrom para leitura legível de textos */
+    --primary-dark: #691737;    /* Rosa escuro/marrom para leitura legível de textos */
     --bg-light: #ffffff;        /* Branco puro solicitado */
     --text-dark: #4a3f3d;       /* Grafite quente (combina muito mais que o preto puro) */
-    --text-light: #857471;
+    --text-light: #726361;
     --white: #ffffff;
 }
 
@@ -105,8 +105,9 @@ nav ul li a {
     color: var(--text-dark);
     text-align: center;
     border-bottom: 1px solid var(--primary-light);
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+    font-family: 'Playfair', serif;
     position: relative;
 }
 
@@ -143,7 +144,7 @@ nav ul li a {
     color: var(--primary-dark);
     margin-bottom: 1.2rem;
     line-height: 1.3;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .hero p {
@@ -196,7 +197,7 @@ nav ul li a {
     font-family: 'Playfair', serif; /* Título dos Cards */
     color: var(--primary-dark);
     margin-bottom: 1.2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     border-bottom: 2px solid var(--primary);
     display: inline-block;
@@ -213,7 +214,7 @@ nav ul li a {
 .card-servico h3 {
     color: var(--primary-dark);
     margin-bottom: 1.2rem;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     border-bottom: 2px solid var(--primary);
     display: inline-block;
     padding-bottom: 5px;
@@ -293,7 +294,7 @@ nav ul li a {
 /* Footer */
 footer {
     background-color: #fdbce7;
-    color: var(--white);
+    color: var(--primary-dark);
     padding: 4rem 0 1.5rem;
     text-align: center;
     position: relative;
@@ -331,8 +332,8 @@ footer {
 .footer-info h3 { 
     font-family: 'Playfair', serif; /* Título do Footer */
     margin-bottom: 1.2rem; 
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 800;
 }
 .footer-info p { 
     margin-bottom: 0.6rem; 
@@ -341,7 +342,7 @@ footer {
 }
 .instagram-link {
     display: inline-block;
-    color: var(--white);
+    color: var(--primary-dark);
     margin-top: 1.2rem;
     text-decoration: none;
     background-color: rgba(255,255,255,0.15);
@@ -355,10 +356,13 @@ footer {
 }
 .footer-bottom {
     margin: 0 1rem 0.5rem 1rem;
-    font-size: 0.8rem;
     border-top: 1px solid rgba(255,255,255,0.15);
     padding-top: 1.5rem;
     opacity: 0.7;
+}
+.footer-bottom p {
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 /* WhatsApp Float */
