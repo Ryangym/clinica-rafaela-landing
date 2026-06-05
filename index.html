@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dra. Rafaela Xavier | Fisioterapia e Estética</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Link CSS da Biblioteca AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
@@ -15,17 +19,17 @@
     <section id="home" class="hero-bg-section">
         <div class="container hero-bg-content">
             
-            <div class="badge-modern">Studio Linda Mulher</div>
+            <div class="badge-modern" data-aos="fade-down" data-aos-duration="1000">Studio Linda Mulher</div>
             
-            <h1 class="title-max">
+            <h1 class="title-max" data-aos="fade-up" data-aos-duration="1200">
                 <span class="line">Beleza.</span>
                 <span class="line">Ciência.</span>
                 <span class="line italic-accent">Cuidado.</span>
             </h1>
             
-            <p class="desc-modern">Redefinindo o padrão de fisioterapia e estética avançada em Pouso Alegre. Resultados reais através de tecnologia e atendimento humanizado.</p>
+            <p class="desc-modern" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Redefinindo o padrão de fisioterapia e estética avançada em Pouso Alegre. Resultados reais através de tecnologia e atendimento humanizado.</p>
             
-            <div class="cta-wrapper">
+            <div class="cta-wrapper" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
                 <a href="https://wa.me/5535997106168?text=Olá,%20Dra.%20Rafaela!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avaliação." class="btn-magnetic" target="_blank">
                     <span class="btn-text-inner">Agendar Avaliação</span>
                     <div class="btn-circle">
@@ -38,11 +42,11 @@
     </section>
 
     <section id="sobre" class="sobre">
-        <div class="sobre-bg">
+        <div class="sobre-bg" data-aos="fade-up" data-aos-duration="1000">
             <img src="assets/img/rafaelaxavier.jpeg" alt="Dra. Rafaela Xavier">
         </div>
         <div class="container sobre-content">
-            <div class="sobre-text">
+            <div class="sobre-text" data-aos="fade-down" data-aos-duration="1000">
                 <h2>Prazer, sou Rafaela Xavier Silva.</h2>
                 <p>Fisioterapeuta graduada pela Universidade do Vale do Sapucaí (UNIVÁS), pós-graduada em Fisioterapia Dermatofuncional pela Faculdade IBECO e profissional da área da estética há mais de 9 anos.</p>
                 <p>Minha trajetória começou com a formação em Tecnologia em Estética pelo SENAC Minas, e desde então busco constante atualização.</p>
@@ -53,10 +57,11 @@
 
     <section id="servicos" class="servicos">
         <div class="container">
-            <h2 class="section-title">Meus Serviços</h2>
+            <h2 class="section-title" data-aos="fade-up">Meus Serviços</h2>
             <div class="servicos-grid">
                 
-                <div class="card-servico">
+                <!-- Adicionado delay no primeiro card -->
+                <div class="card-servico" data-aos="fade-up" data-aos-delay="100">
                     <img src="assets/img/atendimento1.jpeg" alt="Procedimento de Estética">
                     <h3>Estética</h3>
                     <ul>
@@ -69,7 +74,8 @@
                     </ul>
                 </div>
 
-                <div class="card-servico">
+                <!-- Adicionado um delay maior no segundo card para efeito cascata -->
+                <div class="card-servico" data-aos="fade-up" data-aos-delay="300">
                     <img src="assets/img/atendimento2.jpeg" alt="Procedimento de Fisioterapia">
                     <h3>Fisioterapia</h3>
                     <ul>
@@ -85,29 +91,29 @@
 
     <section id="espaco" class="espaco">
         <div class="container">
-            <h2 class="section-title">Conheça o Studio</h2>
-            <p class="text-center">Um ambiente preparado para o seu conforto e segurança.</p>
+            <h2 class="section-title" data-aos="fade-up">Conheça o Studio</h2>
+            <p class="text-center" data-aos="fade-up" data-aos-delay="100">Um ambiente preparado para o seu conforto e segurança.</p>
             <div class="galeria-grid">
-                <img src="assets/img/clinica1.jpeg" alt="Maca de atendimento">
-                <img src="assets/img/clinica2.jpeg" alt="Mesa de atendimento">
+                <img src="assets/img/clinica1.jpeg" alt="Maca de atendimento" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/clinica2.jpeg" alt="Mesa de atendimento" data-aos="fade-up" data-aos-delay="400">
             </div>
         </div>
     </section>
 
     <section id="depoimentos" class="depoimentos">
         <div class="container">
-            <h2 class="section-title">O que dizem as pacientes</h2>
+            <h2 class="section-title" data-aos="fade-up">O que dizem as pacientes</h2>
             <div class="depoimentos-scroll">
-                <img src="assets/img/feedback/feedback1.jpeg" alt="Feedback 1">
-                <img src="assets/img/feedback/feedback2.jpeg" alt="Feedback 2">
-                <img src="assets/img/feedback/feedback3.jpeg" alt="Feedback 3">
+                <img src="assets/img/feedback/feedback1.jpeg" alt="Feedback 1" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/img/feedback/feedback2.jpeg" alt="Feedback 2" data-aos="zoom-in" data-aos-delay="300">
+                <img src="assets/img/feedback/feedback3.jpeg" alt="Feedback 3" data-aos="zoom-in" data-aos-delay="500">
             </div>
         </div>
     </section>
 
     <section class="instagram-slider">
-        <h1>Acompanhe nosso Instagram:</h1>
-        <div class="slider-track">
+        <h1 data-aos="fade-up">Acompanhe nosso Instagram:</h1>
+        <div class="slider-track" data-aos="fade-up" data-aos-delay="200">
             <a href="https://www.instagram.com/drarafaela_xavier/reel/DXXP2K0DWAr/" target="_blank" class="slide">
                 <img src="assets/img/instagram/insta1.jpg" alt="Post do Instagram 1">
             </a>
@@ -135,7 +141,7 @@
     <footer id="contato">
         <div class="footer-glow-bar"></div>
         <div class="container footer-content">
-            <div class="footer-info">
+            <div class="footer-info" data-aos="fade-up">
                 <h3>Studio Linda Mulher</h3>
                 <p>📍 Francisco Sales 443, Centro</p>
                 <p>Pouso Alegre - MG, CEP: 37.550.086</p>
@@ -147,9 +153,21 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5535997106168" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/5535997106168" class="whatsapp-float" target="_blank" data-aos="zoom-in" data-aos-offset="0">
         <svg viewBox="0 0 32 32" width="30" height="30" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M16 2a13 13 0 0 0-11 20l-2 5 5-2a13 13 0 1 0 8-23zm0 24a11 11 0 0 1-5-1l-3 1 1-3a11 11 0 1 1 7 3zm6-8c-.3-.1-1.7-.8-1.9-.9-.2-.1-.4-.1-.5.1-.2.2-.7.9-.9 1.1-.1.2-.3.2-.6.1s-1.2-.4-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.2-.2.3-.4.4-.6s.1-.4.2-.6c.1-.2.1-.5 0-.6-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.6c0 1.5 1.1 3 1.3 3.2.2.3 2.1 3.3 5.2 4.6 2.3.9 3.1 1 4.2.8 1.2-.2 2.6-1.1 3-2.1.3-1 .3-1.9.2-2.1-.1-.2-.3-.3-.6-.5z"/></svg>
     </a>
+
+    <!-- Scripts da Biblioteca AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,       // Garante que a animação aconteça todas as vezes que rolar a tela
+            mirror: true,      // Anima os elementos quando você faz o scroll de baixo para cima
+            offset: 100,       // Deslocamento (em px) antes da animação disparar
+            duration: 800,     // Duração padrão (0.8s)
+            easing: 'ease-out' // Transição fluida e profissional
+        });
+    </script>
 
     <script src="assets/js/carrosel.js"></script>
     <script src="assets/js/script.js"></script>
