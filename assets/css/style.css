@@ -15,13 +15,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Classica', sans-serif;
 }
 
 body {
     background-color: var(--bg-light);
     color: var(--text-dark);
     line-height: 1.6;
+}
+
+/* =========================================
+   IMPORTAÇÃO DE FONTES LOCAIS
+   ========================================= */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Classica';
+    src: url('../fonts/Classica-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AlteHaas';
+    src: url('../fonts/AlteHaasGroteskBold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 .container {
@@ -35,8 +60,8 @@ body {
     color: var(--primary-dark);
     margin-bottom: 2rem;
     font-size: 2.2rem;
-    font-family: 'Playfair', serif; /* Títulos elegantes */
-    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif; /* Títulos elegantes */
+    font-weight: 500;
 }
 
 .text-center { 
@@ -63,7 +88,6 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% auto; /* Preenche a largura, ajusta a altura automática */
-    
     display: flex;
     align-items: flex-end; /* Empurra o conteúdo para baixo no mobile */
     padding-bottom: 4rem;
@@ -88,13 +112,15 @@ body {
 }
 
 .title-max {
-    font-family: 'Playfair', serif;
-    font-size: clamp(3rem, 10vw, 5.5rem); /* Texto responsivo */
-    line-height: 1;
-    color: var(--text-dark);
     margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
+}
+.title-max span{
+    font-family: 'AlteHaas', sans-serif; 
+    font-size: clamp(3rem, 10vw, 5.5rem); 
+    line-height: 1;
+    color: var(--text-dark);
 }
 
 .title-max .italic-accent {
@@ -174,64 +200,59 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
     width: 100%;
-    
-  }
-.instagram-slider h1{
+}
+
+.instagram-slider h1 {
     font-size: 4.5rem;
-    font-family: 'Playfair', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     color: #030D2F;
     margin: 2rem 0 3rem 0;
 }
-  
-  .slider-track {
+
+.slider-track {
     margin-bottom: 10px;
     display: flex;
     gap: 1rem;
-    width: calc(200%); /* Para repetir suavemente */
-    animation: scrollSlider 30s linear infinite;
-  }
-  
-  .slide {
-    flex: 0 0 20vw; /* 5 imagens de 20vw cada = 100vw */
-    height: calc(20vw * 1 / 1); /* Mantém proporção 3:4 */
-  }
-  
-  .slide img {
+    width: 100%;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    scroll-behavior: auto;
+}
+
+.slider-track::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-track {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.slide {
+    flex: 0 0 20vw; 
+    height: calc(20vw * 1 / 1); 
+}
+.slide:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .slide {
+        flex: 0 0 50vw; 
+        height: calc(50vw * 1 / 1);
+    }
+}
+
+.slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     border-radius: 0;
-    margin: 0;
-    padding: 0;
-  }
-    
-  @keyframes scrollSlider {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-@media (max-width: 450px) {
-    .instagram-slider h1{
-        font-size: 9vw;
-        margin: 5vw 0 5vw 0;
-    }
-    .slide {
-        flex: 0 0 60vw; /* 5 imagens de 20vw cada = 100vw */
-        height: calc(60vw * 1 / 1); /* Mantém proporção 3:4 */
-    }
-    .slider-track {
-        gap: 4vw;
-        width: calc(400%); /* Para repetir suavemente */
-        animation: scrollSlider 30s linear infinite;
-    }
 }
-/* ==================== Fim Seção Carrossel ================= */
+/* ==================== FIM Seção Carrossel ================= */
 
 /* Sobre */
 .sobre {
@@ -243,13 +264,14 @@ body {
 }
 
 .sobre h2 {
-    font-family: 'Playfair', serif; /* Título do Sobre Mim */
+    font-family: 'AlteHaas', serif; /* Título do Sobre Mim */
     color: var(--primary-dark);
     margin-bottom: 1.5rem;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
 }
-.sobre p { 
+.sobre p {
+    font-size: calc(1rem + 0.2vw);
     margin-bottom: 1.2rem; 
     color: var(--text-dark);
     text-align: justify;
@@ -513,12 +535,16 @@ footer {
     .hero-text { flex: 1.2; }
     .hero-img { flex: 0.8; margin-top: 0; }
     .hero-img img { max-width: 100%; height: 460px; }
+    .badge-modern {
+        font-size: calc(0.85rem + 0.1vw);
+        letter-spacing: 5px;
+    }
 
     .sobre{
         flex-direction: row;
     }
     .sobre-content {
-        margin: 0 auto;
+        margin: 2%;
     }
     .sobre-bg img{
         width: 100%;
