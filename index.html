@@ -52,37 +52,93 @@
         </div>
     </section>
 
-    <section id="servicos" class="servicos">
+    <section id="servicos" class="services-section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Meus Serviços:</h2>
-            <div class="servicos-grid">
-                
-                <!-- Adicionado delay no primeiro card -->
-                <div class="card-servico" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/img/atendimento1.jpeg" alt="Procedimento de Estética">
-                    <h3>Estética</h3>
-                    <ul>
-                        <li>Criolipólise</li>
-                        <li>Tratamentos personalizados para gordura localizada e flacidez</li>
-                        <li>Tratamentos para rejuvenescimento facial</li>
-                        <li>Limpeza de pele</li>
-                        <li>Drenagem</li>
-                        <li>Pós-operatório de cirurgia facial</li>
-                    </ul>
-                </div>
-
-                <!-- Adicionado um delay maior no segundo card para efeito cascata -->
-                <div class="card-servico" data-aos="fade-up" data-aos-delay="300">
-                    <img src="assets/img/atendimento2.jpeg" alt="Procedimento de Fisioterapia">
-                    <h3>Fisioterapia</h3>
-                    <ul>
-                        <li>Fisioterapia pós câncer de mama</li>
-                        <li>Dor lombar</li>
-                        <li>Fraturas</li>
-                    </ul>
-                </div>
-
+            <div class="section-header">
+                <h2>Transformação e Bem-Estar</h2>
+                <p>Procedimentos estéticos de alta qualidade com a precisão e segurança do olhar clínico fisioterapêutico.</p>
             </div>
+
+            <!-- GRID DE ESTÉTICA -->
+            <div class="services-grid">
+                
+                <!-- CARRO-CHEFE: Criolipólise -->
+                <article class="service-card featured">
+                    <div class="media-wrapper">
+                        <!-- Badge de destaque posicionada sobre a imagem -->
+                        <span class="badge-destaque">Mais Buscado 🔥</span>
+                        
+                        <img src="assets/img/services/criolipolise.jpg" alt="Criolipólise de Abdômen">
+                    </div>
+                    <div class="card-content">
+                        <h3>Criolipólise de Abdômen</h3>
+                        <p>A solução para a gordura localizada que insiste em ficar. Defina o contorno abdominal de forma segura e natural através do congelamento controlado, sem cortes e sem tempo de recuperação.</p>
+                        
+                        <a href="https://www.instagram.com/p/DYx2pJlR2eA/" class="btn-link">
+                            Veja como funciona <span>&#9654;</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARD 2: Massagem Visceral -->
+                <article class="service-card">
+                    <div class="media-wrapper">
+                        <video src="assets/videos/drenagem.mp4" autoplay loop muted playsinline></video>
+                    </div>
+                    <div class="card-content">
+                        <h3>Drenagem e Manipulação Visceral</h3>
+                        <p>Dê adeus à sensação de inchaço. Estímulo metabólico que alivia o desconforto abdominal, melhora o trânsito intestinal e reduz medidas através de manobras linfáticas e relaxantes.</p>
+                    </div>
+                </article>
+
+                <!-- CARD 3: Limpeza de Pele LED Azul -->
+                <article class="service-card">
+                    <div class="media-wrapper">
+                        <video src="assets/videos/luz-azul.mp4" autoplay loop muted playsinline></video>
+                    </div>
+                    <div class="card-content">
+                        <h3>Limpeza de Pele + LED Azul</h3>
+                        <p>Cuidado profundo para peles acneicas e oleosas. Tecnologia com ação bactericida e anti-inflamatória que suaviza inflamações, controla a oleosidade e devolve o viço natural.</p>
+                    </div>
+                </article>
+
+                <!-- CARD 4: Massagem com Pedras Quentes -->
+                <article class="service-card">
+                    <div class="media-wrapper">
+                        <video src="assets/videos/massagens.mp4" autoplay loop muted playsinline></video>
+                    </div>
+                    <div class="card-content">
+                        <h3>Massagem Relaxante com Pedras Quentes</h3>
+                        <p>Uma experiência transformadora de relaxamento profundo. Alivia o estresse, reduz dores musculares, melhora a qualidade do sono e fortalece o sistema imunológico.</p>
+                    </div>
+                </article>
+
+                <!-- CARD 5: Máscara Golden Glitter -->
+                <article class="service-card">
+                    <div class="media-wrapper">
+                        <img src="assets/img/services/mascara-rejuvenecimento.jpg" alt="Máscara de Rejuvenescimento Facial Golden Glitter">
+                    </div>
+                    <div class="card-content">
+                        <h3>Máscaras de Rejuvenescimento</h3>
+                        <p>Tecnologia e luxo para a sua pele. Ativos nanotecnológicos que estimulam a produção de colágeno e elastina, promovendo hidratação intensa, maciez e revitalização cutânea.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- DESTAQUE FISIOTERAPIA (Fora da Grid, sem necessidade de foto) -->
+            <div class="fisio-banner">
+                <div class="fisio-icon">
+                    <!-- Ícone SVG elegante relacionado à saúde/movimento -->
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div>
+                <div class="fisio-content">
+                    <h3>Fisioterapia de Reabilitação</h3>
+                    <p>Nossa base é a saúde. Oferecemos tratamentos fisioterapêuticos especializados para recuperação de lesões, alívio de dores crônicas e restauração da sua mobilidade com segurança clínica.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -150,7 +206,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5535997106168" class="whatsapp-float" target="_blank" data-aos="zoom-in" data-aos-offset="0">
+    <a href="https://wa.me/5535997106168" class="whatsapp-float" target="_blank">
         <svg viewBox="0 0 32 32" width="30" height="30" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M16 2a13 13 0 0 0-11 20l-2 5 5-2a13 13 0 1 0 8-23zm0 24a11 11 0 0 1-5-1l-3 1 1-3a11 11 0 1 1 7 3zm6-8c-.3-.1-1.7-.8-1.9-.9-.2-.1-.4-.1-.5.1-.2.2-.7.9-.9 1.1-.1.2-.3.2-.6.1s-1.2-.4-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.2-.2.3-.4.4-.6s.1-.4.2-.6c.1-.2.1-.5 0-.6-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.6c0 1.5 1.1 3 1.3 3.2.2.3 2.1 3.3 5.2 4.6 2.3.9 3.1 1 4.2.8 1.2-.2 2.6-1.1 3-2.1.3-1 .3-1.9.2-2.1-.1-.2-.3-.3-.6-.5z"/></svg>
     </a>
 
