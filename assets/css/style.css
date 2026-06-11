@@ -32,6 +32,17 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
 }
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 
 /* ==========================================================================
    2. FONTES CUSTOMIZADAS
@@ -113,49 +124,6 @@ body {
     align-items: center;
 }
 
-@media (min-width: 768px) {
-    .menu-btn { 
-        display: none; 
-    }
-    
-    nav {
-        display: block !important;
-        position: static;
-        box-shadow: none;
-        width: auto;
-    }
-    
-    nav ul {
-        display: flex;
-        gap: 2.5rem;
-    }
-    
-    nav ul li a {
-        border-bottom: none;
-        padding: 0;
-        color: var(--text-dark);
-        transition: color 0.3s;
-    }
-    
-    nav ul li a:hover {
-        color: var(--primary-dark);
-    }
-    
-    nav ul li a::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: -6px;
-        left: 0;
-        background-color: var(--primary);
-        transition: width 0.3s;
-    }
-    
-    nav ul li a:hover::after { 
-        width: 100%; 
-    }
-}
 
 /* ==========================================================================
    5. SEÇÃO HERO E ELEMENTOS PRINCIPAIS

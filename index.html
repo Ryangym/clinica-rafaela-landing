@@ -3,37 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dra. Rafaela Xavier | Fisioterapia e Estética</title>
+    
+    <!-- Título otimizado para SEO Local -->
+    <title>Dra. Rafaela Xavier | Fisioterapia e Estética em Pouso Alegre</title>
+    
+    <!-- Descrição que aparece no Google (Máx 160 caracteres) -->
+    <meta name="description" content="Especialista em Fisioterapia e Estética Avançada em Pouso Alegre, MG. Tratamentos de criolipólise, limpeza de pele, massagem e protocolos personalizados.">
+    
+    <!-- Palavras-chave (Opcional, mas ajuda a reforçar o nicho) -->
+    <meta name="keywords" content="estética Pouso Alegre, fisioterapia Pouso Alegre, criolipólise, limpeza de pele, massagem relaxante, Dra Rafaela Xavier">
+
+    <!-- Restante dos seus links (CSS, Favicon, AOS) -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
-    
-    <!-- Link CSS da Biblioteca AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script>// ========================================================
-// SCRIPT TEMPORÁRIO PARA GRAVAÇÃO DE TELA (REMOVER DEPOIS)
-// ========================================================
-let scrollCinematico;
-let gravandoScroll = false;
-
-document.addEventListener('keydown', function(event) {
-    // Aperte a tecla 'S' (de Scroll) no teclado para iniciar ou parar
-    if (event.key.toLowerCase() === 's') { 
-        if (gravandoScroll) {
-            // Se já estiver rodando, ele para
-            clearInterval(scrollCinematico);
-            gravandoScroll = false;
-            console.log("Scroll pausado.");
-        } else {
-            // Se estiver parado, ele começa a descer suavemente
-            scrollCinematico = setInterval(() => { 
-                window.scrollBy(0, 2); // Mude o '2' para alterar a velocidade
-            }, 10);
-            gravandoScroll = true;
-            console.log("Gravando! Scroll iniciado.");
-        }
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Studio Linda Mulher - Dra. Rafaela Xavier",
+    "image": "assets/img/favicon.png",
+    "@id": "",
+    "url": "URL_DO_SITE_AQUI",
+    "telephone": "+5535997106168",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Francisco Sales, 443 - Centro",
+        "addressLocality": "Pouso Alegre",
+        "addressRegion": "MG",
+        "postalCode": "37550-086",
+        "addressCountry": "BR"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -22.2317139,
+        "longitude": -45.9411166
     }
-});</script>
+    }
+    </script>
 </head>
 <body>
 
@@ -43,11 +51,12 @@ document.addEventListener('keydown', function(event) {
             
             <div class="badge-modern" data-aos="fade-down" data-aos-duration="1000">Studio Linda Mulher</div>
             
-            <h1 class="title-max" data-aos="fade-up" data-aos-duration="1200">
+            <h1 class="sr-only">Fisioterapia e Estética Avançada em Pouso Alegre - Dra. Rafaela Xavier</h1>
+            <p class="title-max" data-aos="fade-up" data-aos-duration="1200">
                 <span class="line">Beleza.</span>
                 <span class="line">Ciência.</span>
                 <span class="line italic-accent">Cuidado.</span>
-            </h1>
+            </p>
             
             <p class="desc-modern" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Redefinindo o padrão de fisioterapia e estética avançada em Pouso Alegre. Resultados reais através de tecnologia e atendimento humanizado.</p>
             
@@ -65,7 +74,7 @@ document.addEventListener('keydown', function(event) {
 
     <section id="sobre" class="sobre">
         <div class="sobre-bg" data-aos="fade-up" data-aos-duration="1000">
-            <img src="assets/img/rafaelaxavier.webp" alt="Dra. Rafaela Xavier">
+            <img src="assets/img/rafaelaxavier.webp" alt="Dra. Rafaela Xavier - Especialista em Fisioterapia e Estética Avançada em Pouso Alegre">
         </div>
         <div class="container sobre-content">
             <div class="sobre-text" data-aos="fade-down" data-aos-duration="1000">
@@ -93,7 +102,7 @@ document.addEventListener('keydown', function(event) {
                         <!-- Badge de destaque posicionada sobre a imagem -->
                         <span class="badge-destaque">Mais Buscado 🔥</span>
                         
-                        <img src="assets/img/services/criolipolise.jpg" alt="Criolipólise de Abdômen">
+                        <img src="assets/img/services/criolipolise.jpg" alt="Tratamento de Criolipólise de Abdômen no Studio Linda Mulher em Pouso Alegre">
                     </div>
                     <div class="card-content">
                         <h3>Criolipólise de Abdômen</h3>
@@ -141,7 +150,7 @@ document.addEventListener('keydown', function(event) {
                 <!-- CARD 5: Máscara Golden Glitter -->
                 <article class="service-card">
                     <div class="media-wrapper">
-                        <img src="assets/img/services/mascara-rejuvenecimento.jpg" alt="Máscara de Rejuvenescimento Facial Golden Glitter">
+                        <img src="assets/img/services/mascara-rejuvenecimento.jpg" alt="Sessão de Máscara de Rejuvenescimento Facial Golden Glitter com a Dra. Rafaela Xavier">
                     </div>
                     <div class="card-content">
                         <h3>Máscaras de Rejuvenescimento</h3>
@@ -174,10 +183,10 @@ document.addEventListener('keydown', function(event) {
 
             <div class="galeria-grid" role="list">
                 <figure role="listitem" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/img/clinica2.webp" alt="Maca de atendimento em ambiente iluminado" loading="lazy" decoding="async">
+                    <img src="assets/img/clinica2.webp" alt="Sala de atendimento de estética avançada e fisioterapia do Studio Linda Mulher em Pouso Alegre" loading="lazy" decoding="async">
                 </figure>
                 <figure role="listitem" data-aos="fade-up" data-aos-delay="300">
-                    <img src="assets/img/recepcao.jpeg" alt="Recepção acolhedora com poltronas" loading="lazy" decoding="async">
+                    <img src="assets/img/recepcao.jpeg" alt="Recepção moderna e acolhedora da clínica de estética da Dra. Rafaela Xavier em Pouso Alegre" loading="lazy" decoding="async">
                 </figure>
             </div>
         </div>
@@ -188,9 +197,9 @@ document.addEventListener('keydown', function(event) {
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">O que dizem as pacientes:</h2>
             <div class="depoimentos-scroll">
-                <img src="assets/img/feedback/feedback1.jpeg" alt="Feedback 1" data-aos="zoom-in" data-aos-delay="100">
-                <img src="assets/img/feedback/feedback2.jpeg" alt="Feedback 2" data-aos="zoom-in" data-aos-delay="300">
-                <img src="assets/img/feedback/feedback3.jpeg" alt="Feedback 3" data-aos="zoom-in" data-aos-delay="500">
+                <img src="assets/img/feedback/feedback1.jpeg" alt="Depoimento de paciente sobre tratamento estético em Pouso Alegre com a Dra. Rafaela Xavier" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/img/feedback/feedback2.jpeg" alt="Avaliação positiva de cliente após procedimento de fisioterapia e estética no Studio Linda Mulher" data-aos="zoom-in" data-aos-delay="300">
+                <img src="assets/img/feedback/feedback3.jpeg" alt="Feedback real de paciente da Dra. Rafaela Xavier, especialista em estética e bem-estar" data-aos="zoom-in" data-aos-delay="500">
             </div>
         </div>
     </section>
@@ -199,34 +208,34 @@ document.addEventListener('keydown', function(event) {
         <h1 data-aos="fade-up">Veja minha página no Instagram:</h1>
         <div class="slider-track" data-aos="fade-zoom-in" data-aos-delay="200">
             <a href="https://www.instagram.com/drarafaela_xavier/p/DZcjoQrPD3d/" target="_blank" class="slide">
-                <img src="assets/img/instagram/post1.jpg" alt="Post do Instagram 1">
+                <img src="assets/img/instagram/post1.jpg" alt="Resultados de procedimentos estéticos da Dra. Rafaela Xavier no Instagram">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/reel/DZYTy3XsSwh/" target="_blank" class="slide">
-                <img src="assets/img/instagram/post2.jpg" alt="Post do Instagram 2">
+                <img src="assets/img/instagram/post2.jpg" alt="Dicas de saúde e estética avançada em Pouso Alegre">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/reel/DXXP2K0DWAr/" target="_blank" class="slide">
-                <img src="assets/img/instagram/post3.jpg" alt="Post do Instagram 3">
+                <img src="assets/img/instagram/post3.jpg" alt="Tratamento de fisioterapia dermatofuncional no Studio Linda Mulher">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/reel/DY5bi4ytjRu/" target="_blank" class="slide">
-                <img src="assets/img/instagram/post4.jpg" alt="Post do Instagram 4">
+                <img src="assets/img/instagram/post4.jpg" alt="Antes e depois de tratamentos estéticos faciais e corporais em Pouso Alegre">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/p/DY2w6SiO4S8/" target="_blank" class="slide">
-                <img src="assets/img/instagram/post5.jpg" alt="Post do Instagram 5">
+                <img src="assets/img/instagram/post5.jpg" alt="Procedimento de estética corporal com a Dra. Rafaela Xavier">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/p/DYrtKYBFsEy/" target="_blank" class="slide">
-                <img src="assets/img/instagram/post6.jpg" alt="Post do Instagram 6">
+                <img src="assets/img/instagram/post6.jpg" alt="Rotina de atendimentos de fisioterapia e estética em Pouso Alegre">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/p/DYro6RrOIRX/" target="_blank" class="slide">
-                <img src="assets/img/instagram/post7.jpg" alt="Post do Instagram 7">
+                <img src="assets/img/instagram/post7.jpg" alt="Novidades e tecnologias em estética avançada no Studio Linda Mulher">
             </a> 
             <a href="https://www.instagram.com/drarafaela_xavier/p/DYXND4yMuLB/" target="_blank" class="slide">
-                <img src="assets/img/instagram/post8.jpg" alt="Post do Instagram 8">
+                <img src="assets/img/instagram/post8.jpg" alt="Destaques do Instagram da Dra. Rafaela Xavier, esteticista em Pouso Alegre">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/p/DYNwnuTlhcH/" target="_blank" class="slide">
-                <img src="assets/img/instagram/post9.jpg" alt="Post do Instagram 9">
+                <img src="assets/img/instagram/post9.jpg" alt="Protocolos exclusivos de estética e bem-estar corporal">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/reel/C8YPCRJOQO9/" target="_blank" class="slide">
-                <img src="assets/img/instagram/post10.jpg" alt="Post do Instagram 10">
+                <img src="assets/img/instagram/post10.jpg" alt="Acompanhe o trabalho de fisioterapia e estética da Dra. Rafaela Xavier">
             </a>
         </div>
     </section>
@@ -236,7 +245,7 @@ document.addEventListener('keydown', function(event) {
         <div class="container-footer">
             <div class="footer-content">
                 <div class="footer-info">
-                    <img src="assets/img/logo-studio.png" alt="Logo da Clínica" class="footer-logo">
+                    <img src="assets/img/logo-studio.png" alt="Logotipo do Studio Linda Mulher - Clínica de Fisioterapia e Estética em Pouso Alegre" class="footer-logo">
                     <a href="https://www.google.com/maps/place/R.+Francisco+Sales,+443+-+Santa+Cruz,+Pouso+Alegre+-+MG,+37550-086/@-22.2317089,-45.9436915,2100m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94cbc7b4dc9fc239:0xff2f86aa1648caf6!8m2!3d-22.2317139!4d-45.9411166!16s%2Fg%2F11v10l2wyc?entry=ttu&g_ep=EgoyMDI2MDYwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">📍 Francisco Sales 443, Centro <br>
                     Pouso Alegre - MG, CEP: 37.550.086</a>
 
