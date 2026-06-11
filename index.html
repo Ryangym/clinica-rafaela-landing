@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dra. Rafaela Xavier | Fisioterapia e Estética</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
     
     <!-- Link CSS da Biblioteca AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <script>// ========================================================
+// SCRIPT TEMPORÁRIO PARA GRAVAÇÃO DE TELA (REMOVER DEPOIS)
+// ========================================================
+let scrollCinematico;
+let gravandoScroll = false;
+
+document.addEventListener('keydown', function(event) {
+    // Aperte a tecla 'S' (de Scroll) no teclado para iniciar ou parar
+    if (event.key.toLowerCase() === 's') { 
+        if (gravandoScroll) {
+            // Se já estiver rodando, ele para
+            clearInterval(scrollCinematico);
+            gravandoScroll = false;
+            console.log("Scroll pausado.");
+        } else {
+            // Se estiver parado, ele começa a descer suavemente
+            scrollCinematico = setInterval(() => { 
+                window.scrollBy(0, 2); // Mude o '2' para alterar a velocidade
+            }, 10);
+            gravandoScroll = true;
+            console.log("Gravando! Scroll iniciado.");
+        }
+    }
+});</script>
 </head>
 <body>
 
@@ -26,7 +51,7 @@
             
             <p class="desc-modern" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Redefinindo o padrão de fisioterapia e estética avançada em Pouso Alegre. Resultados reais através de tecnologia e atendimento humanizado.</p>
             
-            <div class="cta-wrapper" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
+            <div class="cta-wrapper" >
                 <a href="https://wa.me/5535997106168?text=Olá,%20Dra.%20Rafaela!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avaliação." class="btn-magnetic" target="_blank">
                     <span class="btn-text-inner">Agendar Avaliação</span>
                     <div class="btn-circle">
@@ -40,7 +65,7 @@
 
     <section id="sobre" class="sobre">
         <div class="sobre-bg" data-aos="fade-up" data-aos-duration="1000">
-            <img src="assets/img/rafaelaxavier.jpeg" alt="Dra. Rafaela Xavier">
+            <img src="assets/img/rafaelaxavier.webp" alt="Dra. Rafaela Xavier">
         </div>
         <div class="container sobre-content">
             <div class="sobre-text" data-aos="fade-down" data-aos-duration="1000">
@@ -149,7 +174,7 @@
 
             <div class="galeria-grid" role="list">
                 <figure role="listitem" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/img/clinica2.jpeg" alt="Maca de atendimento em ambiente iluminado" loading="lazy" decoding="async">
+                    <img src="assets/img/clinica2.webp" alt="Maca de atendimento em ambiente iluminado" loading="lazy" decoding="async">
                 </figure>
                 <figure role="listitem" data-aos="fade-up" data-aos-delay="300">
                     <img src="assets/img/recepcao.jpeg" alt="Recepção acolhedora com poltronas" loading="lazy" decoding="async">
@@ -173,26 +198,35 @@
     <section class="instagram-slider">
         <h1 data-aos="fade-up">Veja minha página no Instagram:</h1>
         <div class="slider-track" data-aos="fade-zoom-in" data-aos-delay="200">
+            <a href="https://www.instagram.com/drarafaela_xavier/p/DZcjoQrPD3d/" target="_blank" class="slide">
+                <img src="assets/img/instagram/post1.jpg" alt="Post do Instagram 1">
+            </a>
+            <a href="https://www.instagram.com/drarafaela_xavier/reel/DZYTy3XsSwh/" target="_blank" class="slide">
+                <img src="assets/img/instagram/post2.jpg" alt="Post do Instagram 2">
+            </a>
             <a href="https://www.instagram.com/drarafaela_xavier/reel/DXXP2K0DWAr/" target="_blank" class="slide">
-                <img src="assets/img/instagram/insta1.jpg" alt="Post do Instagram 1">
+                <img src="assets/img/instagram/post3.jpg" alt="Post do Instagram 3">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/reel/DY5bi4ytjRu/" target="_blank" class="slide">
-                <img src="assets/img/instagram/insta2.jpg" alt="Post do Instagram 2">
+                <img src="assets/img/instagram/post4.jpg" alt="Post do Instagram 4">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/p/DY2w6SiO4S8/" target="_blank" class="slide">
-                <img src="assets/img/instagram/insta3.jpg" alt="Post do Instagram 3">
+                <img src="assets/img/instagram/post5.jpg" alt="Post do Instagram 5">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/p/DYrtKYBFsEy/" target="_blank" class="slide">
-                <img src="assets/img/instagram/insta4.jpg" alt="Post do Instagram 4">
+                <img src="assets/img/instagram/post6.jpg" alt="Post do Instagram 6">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/p/DYro6RrOIRX/" target="_blank" class="slide">
-                <img src="assets/img/instagram/insta5.jpg" alt="Post do Instagram 5">
+                <img src="assets/img/instagram/post7.jpg" alt="Post do Instagram 7">
             </a> 
             <a href="https://www.instagram.com/drarafaela_xavier/p/DYXND4yMuLB/" target="_blank" class="slide">
-                <img src="assets/img/instagram/insta6.jpg" alt="Post do Instagram 6">
+                <img src="assets/img/instagram/post8.jpg" alt="Post do Instagram 8">
             </a>
             <a href="https://www.instagram.com/drarafaela_xavier/p/DYNwnuTlhcH/" target="_blank" class="slide">
-                <img src="assets/img/instagram/insta7.jpg" alt="Post do Instagram 7">
+                <img src="assets/img/instagram/post9.jpg" alt="Post do Instagram 9">
+            </a>
+            <a href="https://www.instagram.com/drarafaela_xavier/reel/C8YPCRJOQO9/" target="_blank" class="slide">
+                <img src="assets/img/instagram/post10.jpg" alt="Post do Instagram 10">
             </a>
         </div>
     </section>
