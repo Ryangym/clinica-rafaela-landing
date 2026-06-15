@@ -133,7 +133,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: var(--white);
-    background-image: url('../img/rafaela-mob3.png');
+    background-image: url('../img/rafaela-mobile.webp');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -250,7 +250,7 @@ body {
 
 @media (min-width: 900px) {
     .hero-bg-section {
-        background-image: url('../img/rafaela-desktop.png');
+        background-image: url('../img/rafaela-desktop.webp');
         background-position: right;
         background-size: cover;
         align-items: center;
