@@ -24,7 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Classica', sans-serif;
+    font-family: 'classica', sans-serif;
 }
 
 body {
@@ -48,28 +48,21 @@ body {
    2. FONTES CUSTOMIZADAS
    ========================================================================== */
 @font-face {
-    font-family: 'BebasNeue';
-    src: url('/../FONTS/BebasNeue-Regular.ttf') format('truetype');
+    font-family: 'bebas';
+    src: url('../fonts/bebas.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Classica';
-    src: url('/../FONTS/Classica-Book.ttf') format('truetype');
+    font-family: 'classica';
+    src: url('../fonts/classica.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'AlteHaas';
-    src: url('../fonts/AlteHaasGroteskBold.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
 
 /* ==========================================================================
    3. CLASSES UTILITÁRIAS GLOBAIS
@@ -93,7 +86,7 @@ body {
     color: var(--primary-dark);
     margin-bottom: 2rem;
     font-size: 2.2rem;
-    font-family: 'Classica', sans-serif;
+    font-family: 'classica', sans-serif;
     font-weight: 800;
 }
 
@@ -166,7 +159,7 @@ body {
 }
 
 .title-max span {
-    font-family: 'AlteHaas', sans-serif; 
+    font-family: sans-serif; 
     font-size: clamp(3rem, 10vw, 5.5rem); 
     line-height: 1;
     color: var(--text-dark);
@@ -629,7 +622,7 @@ body {
 
 .instagram-slider h1 {
     font-size: 4.5rem;
-    font-family: 'BebasNeue', sans-serif;
+    font-family: 'bebas', sans-serif;
     color: #030D2F;
     margin: 2rem 0 3rem 0;
 }
